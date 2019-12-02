@@ -23,12 +23,12 @@ urlpatterns = [
      #trae los autobuses junto con el nombre de las llaves foraneas
      re_path(r'^lista_allautobus/$', views.AutobusAllList.as_view() ),
      #trae los asiento ingresar nuevo
-     re_path(r'^lista_asiento/$', views.AsientoList.as_view() ),
+     re_path(r'^lista_asiento/(?P<id>\d+)$', views.AsientoList.as_view() ),
      #actualizar con put el estado del asiento
      re_path(r'^detalle_asiento/$', views.AsientoDetail.as_view() ),
      #trae todos los boletos junto a los nombres de las llaves foraneas
      re_path(r'^lista_boletos/$', views.BoletoList.as_view() ),
      #actualizar algun balor de boleto o traer 1 boleto
-     re_path(r'^detalle_boletos/$', views.BoletoDetail.as_view() ),
+     re_path(r'^detalle_boletos/(?P<id>\d+)$', views.BoletoDetail.as_view() ),
 
 ]
