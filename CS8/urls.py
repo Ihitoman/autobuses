@@ -22,5 +22,5 @@ urlpatterns = [
     re_path(r'^', include(router.urls)),
     re_path(r'^soa/boletos', include('example.urls')),
 
-    
+    #o u o
 ]
