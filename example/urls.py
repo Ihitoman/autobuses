@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 from rest_framework import routers, serializers, viewsets
 
 from example import views
-
+#>;v
 urlpatterns = [
      #trae solo la tabla de autobus
      re_path(r'^lista_autobuses/$', views.AutobusList.as_view() ),
